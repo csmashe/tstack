@@ -46,7 +46,7 @@ one appears.
    smallest change that works. Fix the case that happened, not every case
    that could. If you are on the default branch, create a branch first.
 2. **Prove it.** Get proof for every change you made. See "Proof".
-3. **Get feedback.** Use the `sol-loop` skill to verify changes.
+3. **Get feedback.** Use the `sol-loop` skill to verify changes. Continue on with "Other Testing" listed below. 
 4. **File the PR** with the `file-pr` skill. Rebase onto the latest default
    branch first. Add one short line to the description that says how you proved
    the change.
@@ -61,6 +61,13 @@ pending, the work stops, because nobody will prompt you again. Wait with the
 watcher from `babysit-pr`, so something wakes you when the PR changes. In T3
 Code that is `watch_pull_request`. If you stop before the merge, call
 `unwatch_pull_request` first.
+
+## Other Testing
+If this is a C# project after you run the sol-loop completely you need to run run review-ReSharper. 
+If the project is RodentProCart.Web, run review-RP else run review-comments.
+All tests should be run sequentially. 
+
+
 
 ## Proof
 
