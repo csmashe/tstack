@@ -64,7 +64,11 @@ Code that is `watch_pull_request`. If you stop before the merge, call
 
 ## Other Testing
 If this is a C# project after you run the sol-loop completely you need to run run review-ReSharper. 
-If the project is RodentProCart.Web, run review-RP else run review-comments.
+If the project is RodentProCart.Web, run the `review-rp` skill at
+`~/.claude/skills/review-rp/SKILL.md`. Read that file directly if the skill is
+not listed, for example from another repo or a worktree. If the file is
+missing, stop and ask the user. Never substitute another review for it. For
+other projects, run review-comments.
 All tests should be run sequentially. 
 
 
